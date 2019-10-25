@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Date</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Add Date</h1>
+
+<form action="#" th:action="@{/addDate}" th:object="${user}" method="post">
+    <p>
+        Start Date: <input type="date" th:field="*{startDate}">
+    </p>
+    <p>
+        End Date: <input type="date" th:field="*{endDate}">
+    </p>
+    <p>
+        <input type="submit" value="Confirm"/>
+    </p>
+</form>
+
+</body>
+</html>
